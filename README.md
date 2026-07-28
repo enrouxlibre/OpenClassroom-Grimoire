@@ -1,33 +1,51 @@
-# Mon Vieux Grimoire
+# Mon Vieux Grimoire / Grimoire
 
-Projet de backend Node OpenClassRooms.
+## An OpenClassroom Web Development Project
 
-## Architecture
+---
+
+## Français
+
+### À propos du projet
+
+**"Mon Vieux Grimoire"** est un projet web complet développé dans le cadre de la formation **Web Developer** d'OpenClassroom. Il s'agit d'une application de gestion de livres avec un système de notation et d'authentification utilisateur.
+
+### Architecture
 
 Le projet est composé de trois parties :
 
-- **Frontend** : Application React (Fait par OpenClassRooms)
-- **Backend** : API Node.js/Express (L'objet du projet)
-- **Base de données** : MongoDB (Avec Docker)
+- **Frontend** : Application React avec interface utilisateur moderne
+- **Backend** : API Node.js/Express avec système d'authentification
+- **Base de données** : MongoDB (facilement déployable avec Docker)
 
-## Prérequis
+### Fonctionnalités
+
+- Gestion complète des livres (création, modification, suppression)
+- Système de notation des livres
+- Authentification et gestion des utilisateurs
+- Protection des routes avec JWT
+- Upload et optimisation d'images
+- Interface responsive
+
+### Prérequis
 
 - Node.js (version 16 ou supérieure)
-- npm
+- npm ou yarn
 - MongoDB (installé localement ou via Docker)
+- Docker et Docker Compose (pour utiliser la base de données conteneurisée)
 
-## Installation
+### Installation et démarrage
 
-### 1. Cloner le projet
+#### 1. Cloner le projet
 
 ```bash
 git clone <url-du-repo>
-cd grimoire
+cd Grimoire
 ```
 
-### 2. Configurer les variables d'environnement
+#### 2. Configurer les variables d'environnement
 
-Créer un fichier `.env` à la racine du projet avec les variables suivantes :
+Créer un fichier `.env` à la racine du projet :
 
 ```env
 MONGO_INITDB_ROOT_USERNAME=admin
@@ -35,21 +53,185 @@ MONGO_INITDB_ROOT_PASSWORD=password
 JWT_SECRET=RANDOM_TOKEN_SECRET
 ```
 
-### 3. Installation des dépendances
+#### 3. Installation des dépendances
 
-#### Backend
+**Backend** :
 
 ```bash
 cd backend
 npm install --force
 ```
 
-#### Frontend
+**Frontend** :
 
 ```bash
 cd frontend
-npm install
+npm install --force
 ```
+
+#### 4. Démarrer l'application
+
+**Option 1 : Avec Docker Compose**
+
+```bash
+docker-compose up
+```
+
+**Option 2 : Manuellement**
+
+Terminal 1 (Backend) :
+
+```bash
+cd backend
+npm start
+```
+
+Terminal 2 (Frontend) :
+
+```bash
+cd frontend
+npm start
+```
+
+### Technologies utilisées
+
+**Backend** :
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JSON Web Token (JWT)
+- Multer
+- Sharp
+
+**Frontend** :
+
+- React
+- React Router
+- CSS Modules
+
+---
+
+## English
+
+### About the Project
+
+**"Grimoire"** is a complete web application developed as part of the **Web Developer** training course at OpenClassroom. It is a book management application with a rating system and user authentication.
+
+### Architecture
+
+The project consists of three main parts:
+
+- **Frontend**: React application with modern user interface
+- **Backend**: Node.js/Express API with authentication system
+- **Database**: MongoDB (easily deployable with Docker)
+
+### Features
+
+- Complete book management (create, update, delete)
+- Book rating system
+- User authentication and management
+- Route protection with JWT
+- Image upload and optimization
+- Responsive interface
+
+### Prerequisites
+
+- Node.js (version 16 or higher)
+- npm or yarn
+- MongoDB (installed locally or via Docker)
+- Docker and Docker Compose (for containerized database)
+
+### Installation and Startup
+
+#### 1. Clone the Repository
+
+```bash
+git clone <url-du-repo>
+cd Grimoire
+```
+
+#### 2. Configure Environment Variables
+
+Create a `.env` file at the project root:
+
+```env
+MONGO_INITDB_ROOT_USERNAME=admin
+MONGO_INITDB_ROOT_PASSWORD=password
+JWT_SECRET=RANDOM_TOKEN_SECRET
+```
+
+#### 3. Install Dependencies
+
+**Backend**:
+
+```bash
+cd backend
+npm install --force
+```
+
+**Frontend**:
+
+```bash
+cd frontend
+npm install --force
+```
+
+#### 4. Start the Application
+
+**Option 1: With Docker Compose**
+
+```bash
+docker-compose up
+```
+
+**Option 2: Manually**
+
+Terminal 1 (Backend):
+
+```bash
+cd backend
+npm start
+```
+
+Terminal 2 (Frontend):
+
+```bash
+cd frontend
+npm start
+```
+
+### Technologies Used
+
+**Backend**:
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JSON Web Token (JWT)
+- Multer
+- Sharp
+
+**Frontend**:
+
+- React
+- React Router
+- CSS Modules
+
+---
+
+## Educational Context
+
+This project is part of the OpenClassroom Web Developer course and demonstrates:
+
+- Full-stack web development
+- RESTful API design
+- Database integration and management
+- User authentication and authorization
+- Front-end and back-end separation
+- Modern web development practices
 
 ## Démarrage du projet
 
